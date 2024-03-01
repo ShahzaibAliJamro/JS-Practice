@@ -19,9 +19,6 @@ console.log(name1);
 
 
 
-
-
-
 function percentageCalculator (marks1 , marks2, marks3, marks4, marks5){
     var totalMarks = 500;
     var obtainedMarks = marks1 + marks2 + marks3 + marks4 + marks5 ;
