@@ -45,3 +45,14 @@ function switch1(){
         para.innerHTML = 'changed';
     }
 }
+
+
+
+var password = prompt('Enter your password');
+var rePassword = prompt('Verify your password');
+
+if (password === rePassword){
+    console.log('Welcome');
+}else{
+    alert('Passwords do not match')
+}
