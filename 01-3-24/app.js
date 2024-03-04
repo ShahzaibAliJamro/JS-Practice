@@ -49,7 +49,7 @@ function switch1(){
 
 
 var password = prompt('Enter your password');
-var rePassword = prompt('Verify your password');
+var rePassword = prompt('Match your password');
 
 if (password === rePassword){
     console.log('Welcome');
