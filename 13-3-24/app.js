@@ -1,11 +1,11 @@
-// const table = +prompt('Which number table do you want?');
-// const length = +prompt('How long should the table be?')
+const table = +prompt('Which number table do you want?');
+const length = +prompt('How long should the table be?')
 
 
 
-// for(let i = 1; i<=length ; i++){
-//     console.log(`${table} * ${i} = ${table*i}`);
-// }
+for(let i = 1; i<=length ; i++){
+    document.write(`${table} * ${i} = ${table*i} <br>`);
+}
 
 
 
@@ -29,9 +29,14 @@
 // }
 
 
-const fruits = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
-const ul = document.querySelector('ul');
-for (let i = 0; i < fruits.length; i++) {
-    // console.log(fruits[i]);
-    ul.innerHTML += `<li>${fruits[i]}</li>`
-}
+// const fruits = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
+// const ul = document.querySelector('ul');
+// for (let i = 0; i < fruits.length; i++) {
+//     // console.log(fruits[i]);
+//     ul.innerHTML += `<li>${fruits[i]}</li>`
+// }
+
+
+// for (let i = 1; i>0; i++) {
+//     console.log(i);
+// }
