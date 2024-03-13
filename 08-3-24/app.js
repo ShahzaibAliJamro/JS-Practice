@@ -23,11 +23,11 @@
 
 
 
-// const fruits = ["mango" , "banana", "pineapple", "apple", "guava","papita","kheera","gaajar","mooli","pomegrenade","grapes" ];
-// fruits.splice(0 , 8);
-// fruits.splice(1, 2);
+const fruits = ["mango" , "banana", "pineapple", "apple", "guava","papita","kheera","gaajar","mooli","pomegrenade","grapes" ];
+fruits.splice(0 , 8);
+fruits.splice(1, 2);
 
-// console.log(fruits);
+console.log(fruits);
 
 
 
