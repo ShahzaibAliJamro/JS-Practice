@@ -1,11 +1,11 @@
-const table = +prompt('Which number table do you want?');
-const length = +prompt('How long should the table be?')
+// const table = +prompt('Which number table do you want?');
+// const length = +prompt('How long should the table be?')
 
 
 
-for(let i = 1; i<=length ; i++){
-    document.write(`${table} * ${i} = ${table*i} <br>`);
-}
+// for(let i = 1; i<=length ; i++){
+//     document.write(`${table} * ${i} = ${table*i} <br>`);
+// }
 
 
 
@@ -39,4 +39,14 @@ for(let i = 1; i<=length ; i++){
 
 // for (let i = 1; i>0; i++) {
 //     console.log(i);
+// }
+
+
+
+
+// for (let i = 1; i <= 100 ; i++) {
+//     // console.log(i);
+//     for (let j = 1; j < 11; j++) {
+//         console.log(`${i} * ${j} = ${i*j}`);
+//     }
 // }
