@@ -28,7 +28,14 @@
 let input1 = document.querySelector('.input1');
 let input2 = document.querySelector('.input2');
 let select = document.querySelector('#select');
+let h1 = document.querySelector('.h1');
 
-function showCalculations()(params) {
-    
+
+function showCalculations() {
+    let num1 = parseFloat(input1.value);
+    let num2 = parseFloat(input2.value);
+    if (select.value == '+') {
+        h1.innerHTML = num1+num2;
+        console.log(num1);
+    }
 }
