@@ -1,3 +1,5 @@
+// task A
+
 // let array = ['apple1','apple2','apple3','apple4','apple5','apple6','apple7','apple8','apple9','apple10','apple11','apple12','apple13','apple14','apple15','apple16','apple17','apple18','apple19','apple20',];
 // let ol = document.querySelector('.ol');
 // printTodo()
@@ -25,17 +27,27 @@
 //     }
 // }
 
-let input1 = document.querySelector('.input1');
-let input2 = document.querySelector('.input2');
-let select = document.querySelector('#select');
-let h1 = document.querySelector('.h1');
 
 
-function showCalculations() {
-    let num1 = parseFloat(input1.value);
-    let num2 = parseFloat(input2.value);
-    if (select.value == '+') {
-        h1.innerHTML = num1+num2;
-        console.log(num1);
-    }
-}
+
+// task B
+
+// let input1 = document.querySelector('.input1');
+// let input2 = document.querySelector('.input2');
+// let select = document.querySelector('#select');
+// let h1 = document.querySelector('.h1');
+
+
+// function showCalculations() {
+//     let num1 = parseFloat(input1.value);
+//     let num2 = parseFloat(input2.value);
+//     if (select.value == '+') {
+//         h1.innerHTML = num1+num2;
+//     }else if (select.value == '-') {
+//         h1.innerHTML = num1-num2;
+//     }else if (select.value == '/') {
+//         h1.innerHTML = num1/num2;
+//     }else if (select.value == '*') {
+//         h1.innerHTML = num1*num2;
+//     }
+// }
