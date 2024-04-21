@@ -1,0 +1,28 @@
+#footer{
+    background-color: #48afff;
+}
+.container-fluid{
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.footer-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+}
+.footer-col{
+    width: 33%;
+}
+.footer-logo{
+    width: 128px;
+    height: 27px;
+    overflow: hidden;
+}
+.footer-col-1-list{
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+.footer-list-item{
+    margin-bottom: 10px;
+    list-style-type: none;
+}
