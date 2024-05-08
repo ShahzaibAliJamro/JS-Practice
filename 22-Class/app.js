@@ -105,16 +105,23 @@ const products = [
         description: "Fast and reliable internet connection for your home network."
     }
 ];
-let div = document.querySelector(".render-area");
-for (let index = 0; index < products.length; index++) {
-    div.innerHTML += `
-        <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">${products[index].name}</h5>
-        <h6 class="card-subtitle mb-2 mt-1 text-body-secondary">${products[index].price} $</h6>
-        <p class="card-text">${products[index].description}</p>
-        <a href="#" class="card-link">Add to cart</a>
-      </div>
-    </div>
+let div = document.querySelector('.div');
+
+function renderProducts() {
+    for (let i = 0; i < products.length; i++) {
+        div.innerHTML += `
+        <div style="width: 200px;padding: 10px;border: 1px solid white;">
+            <h4>${products[i].name}</h4>
+            <h4>${products[i].price} $</h4>
+            <p>${products[i].description}</p>
+            <button onclick="addToCart(${i})">Add to Cart</button>
+        </div>
         `
+    }
+}
+renderProducts();
+let checkOutList = [];
+function addToCart(index) {
+    checkOutList.push(products[index]);
+    console.log(checkOutList);
 }
