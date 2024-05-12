@@ -94,5 +94,3 @@ console.log(date);
 console.log(day);
 console.log(month);
 console.log(day + '/' + date + '/' + month + '/' + year);
-let abc = 1000*60*60*24*365*18;
-console.log(+current.getTime()-abc);
