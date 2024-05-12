@@ -39,10 +39,60 @@
 // }
 // console.log(text);
 
-// let text = 'Ronaldo';
-// for (let i = 0; i < text.length; i++) {
-//     if (text.slice(i, i + 7) === 'Ronaldo') {
-//         text = text.slice(0, i) + 'Messi' + text.slice(i + 12);
-//     }
-// }
+// let text = 'I think Ronaldo is the greatest player of all time';
+// // for (let i = 0; i < text.length; i++) {
+// //     if (text.slice(i, i + 7) === 'Ronaldo') {
+// //         text = text.slice(0, i) + 'Messi' + text.slice(i + 12);
+// //     }
+// // }
+// // console.log(text);
+// // let startNum = text.indexOf('Ronaldo');
+// // if (startNum != -1) {
+// //     text = text.slice(0,startNum) + 'Messi' + text.slice(startNum+7)
+// // }
+// // console.log(text);
+// let text2 = text.replaceAll('Ronaldo', 'Messi');
 // console.log(text);
+// console.log(text2);
+
+// let randomNumber = Math.random()*6;
+// let randomNumber2 = Math.round(randomNumber);
+// console.log(randomNumber2);
+
+// let num = +'1,399'.replace(',','');
+// console.log(num);
+// console.log(typeof(num));
+// const number = 13.59999999999945454545454545454;
+// console.log(number.toFixed(2));
+
+// setInterval(function () {
+//     const rn = new Date();
+//     console.log(rn);
+// }, 1000);
+const current = new Date();
+const date = current.getDate().toString();
+const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let day = current.getDay().toString();
+for (let i = 0; i < daysOfWeek.length; i++) {
+    if (day === `${i}`) {
+        day = daysOfWeek[i];
+    }
+}
+let month = +current.getMonth();
+const monthsOfYear = [
+    'January', 'February', 'March', 'April', 
+    'May', 'June', 'July', 'August', 
+    'September', 'October', 'November', 'December'
+];
+for (let i = 0; i < monthsOfYear.length; i++) {
+    if (month === i) {
+        month = monthsOfYear[i];
+    }
+}
+const year = +current.getFullYear();
+console.log(date);
+console.log(day);
+console.log(month);
+console.log(day + '/' + date + '/' + month + '/' + year);
+let abc = 1000*60*60*24*365*18;
+console.log(+current.getTime()-abc);
