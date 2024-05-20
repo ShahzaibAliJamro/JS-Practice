@@ -69,28 +69,53 @@
 //     const rn = new Date();
 //     console.log(rn);
 // }, 1000);
-const current = new Date();
-const date = current.getDate().toString();
-const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-let day = current.getDay().toString();
-for (let i = 0; i < daysOfWeek.length; i++) {
-    if (day === `${i}`) {
-        day = daysOfWeek[i];
-    }
-}
-let month = +current.getMonth();
-const monthsOfYear = [
-    'January', 'February', 'March', 'April', 
-    'May', 'June', 'July', 'August', 
-    'September', 'October', 'November', 'December'
-];
-for (let i = 0; i < monthsOfYear.length; i++) {
-    if (month === i) {
-        month = monthsOfYear[i];
-    }
-}
-const year = +current.getFullYear();
-console.log(date);
-console.log(day);
-console.log(month);
-console.log(day + '/' + date + '/' + month + '/' + year);
+
+
+// const current = new Date();
+// const set = new Date("July 29, 2006");
+// // const set = new Date("August 22, 1977");
+// const date = current.getDate().toString();
+// const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// let day = current.getDay().toString();
+// for (let i = 0; i < daysOfWeek.length; i++) {
+//     if (day === `${i}`) {
+//         day = daysOfWeek[i];
+//     }
+// }
+// let month = +current.getMonth();
+// const monthsOfYear = [
+//     'January', 'February', 'March', 'April', 
+//     'May', 'June', 'July', 'August', 
+//     'September', 'October', 'November', 'December'
+// ];
+// for (let i = 0; i < monthsOfYear.length; i++) {
+//     if (month === i) {
+//         month = monthsOfYear[i];
+//     }
+// }
+// const year = +current.getFullYear();
+// console.log(date);
+// console.log(day);
+// console.log(month);
+// console.log(day + '/' + date + '/' + month + '/' + year);
+// let currentMs = current.getTime();
+// let setMs = set.getTime();
+// console.log(currentMs);
+// console.log(setMs);
+// let difference = (currentMs-setMs)/1000/60/60/24/365;
+// console.log(difference.toFixed(2));
+
+
+// document.write(`
+// <button onclick="tellTime()">Click Now!</button>
+// `)
+// function tellTime() {
+//     console.log(new Date ());
+// }
+
+// function greetUser(greeting) {
+//     console.log(greeting);
+//     return 'Hello World 5'
+// }
+// greetUser('Hello World 2');
+// console.log(greetUser('Hello World 5'));
