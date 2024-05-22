@@ -17,4 +17,6 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
     console.log(user.value);
     console.log(pass.value);
+    user.value = '';
+    pass.value = '';
 })
