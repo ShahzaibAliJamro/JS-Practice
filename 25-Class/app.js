@@ -143,12 +143,12 @@
 
 
 
-const sum = (num1 , num2)=>{
-    console.log(num1 + num2); //30
-    return num1 + num2
-}
-const answer = sum(10 , 20);
-console.log(answer);
+// const sum = (num1 , num2)=>{
+//     console.log(num1 + num2); //30
+//     return num1 + num2
+// }
+// const answer = sum(10 , 20);
+// console.log(answer);
 
 
 
@@ -207,3 +207,43 @@ console.log(answer);
 
 // const sum = (num1 , num2) => num1 + num2;
 // console.log(sum(10 , 29));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const abc = {
+//     name: 'Shahzaib Ali',
+//     greetUser: i => 'Hello ' + i,
+//     greetUser2: function () {
+//         return 'Hello ' + this.name
+//     }
+// }
+// console.log(abc.greetUser2(abc.name));
+
+
+
+
+
+
+
+
+
+let namee = 'Shahzaib_Ali';
+
+
+let usernameRegex = /^[a-zA-Z0-9_]{3,16}$/;
+
+if (usernameRegex.test(namee)) {
+    console.log(123);
+}else{
+    console.log(4554);
+}
