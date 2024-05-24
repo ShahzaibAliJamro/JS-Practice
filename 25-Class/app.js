@@ -237,13 +237,109 @@
 
 
 
-let namee = 'Shahzaib_Ali';
+// let namee = 'Shahzaib_Ali';
 
 
-let usernameRegex = /^[a-zA-Z0-9_]{3,16}$/;
+// let usernameRegex = /^[a-zA-Z0-9_]{3,16}$/;
 
-if (usernameRegex.test(namee)) {
-    console.log(123);
-}else{
-    console.log(4554);
+// if (usernameRegex.test(namee)) {
+//     console.log(123);
+// }else{
+//     console.log(4554);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const array = ['one','two','three','four','five','six','seven','eight','nine','ten'];
+
+// for each
+
+// array.forEach(function (indexValue,indexNum) {
+//     console.log(indexValue + ' is at index ' + indexNum);
+// })
+
+// array.forEach((indexValue,indexNum,array) => {
+//     console.log(indexValue + ' is at index ' + indexNum);
+//     if (indexNum >= 9) {
+//         console.log(array);
+//     }
+// })
+
+
+
+// for of
+
+// for (const i of array) {
+//     console.log(i);
+// }
+
+
+
+const obj = {
+    name: 'Shahzaib',
+    class: 'MWF',
+    days: ['Mon','Wed','Fri'],
 }
+
+for (const key in obj) {
+    if (key === 'days') {
+        for (let i = 0; i < obj.days.length; i++) {
+            console.log(obj.days[i]);
+        }
+        break
+    }
+    console.log(obj[key]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
