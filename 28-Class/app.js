@@ -1,12 +1,22 @@
 const div = document.querySelector('div');
-
+let arr;
 axios('https://jsonplaceholder.typicode.com/users')
-    .then(res => res.data)
     .then(res => {
-        res.map(item => {
-            console.log(item);
+        arr = res.data;
+        return arr;
+    })
+    .then(res => {
+        renderCards(res);
+    })
+    .catch(err => {
+        console.log(err);
+    })
+
+    function renderCards(arr) {
+        div.innerHTML = '';
+        arr.map((item,index) => {
             div.innerHTML += `
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;" onclick="deleteCardOnClick(${index})">
                 <div class="card-body">
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text">Address: ${item.address.suite}, ${item.address.street}, ${item.address.city}</p>
@@ -19,12 +29,11 @@ axios('https://jsonplaceholder.typicode.com/users')
             </div>
             `
         })
-    })
-    .catch(err => {
-        console.log(err);
-    })
-
-
+    }
+    function deleteCardOnClick(card) {
+        arr.splice(card,1);
+        renderCards(arr);
+    }
 
     
 // async function asyncFunc() {
